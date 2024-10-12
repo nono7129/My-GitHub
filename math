@@ -1,0 +1,10 @@
+def set_operations(A, B):
+    union = list(set(A) | set(B))
+    intersection = list(set(A) & set(B))
+    difference = list(set(A) - set(B))
+    return union, intersection, difference
+
+# 예시
+A = [1, 2, 3, 4]
+B = [3, 4, 5, 6]
+print(set_operations(A, B))
